@@ -2,4 +2,4 @@
 
 ## HTML, CSS and JavaScript Used only.
 
-Live Link to the site is given [https://ohtobiloba.github.io/HNG11-Projects/OhTeeDevGoals/index.html](Here).
+Live Link to the site is given (Here)[https://ohtobiloba.github.io/HNG11-Projects/OhTeeDevGoals/index.html]
