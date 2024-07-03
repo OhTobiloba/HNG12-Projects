@@ -460,6 +460,25 @@ header {
     height: 100vh;
 }
 
+#xlinks {
+    background: var(--clr-white);
+    text-align: center;
+}
+
+.xlinks ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.xlinks ul li a {
+    padding: 7px 20px;
+    background: rgb(67, 46, 46);
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+
 #projects {
     background: var(--clr-white);
 }

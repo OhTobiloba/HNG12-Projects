@@ -8,6 +8,31 @@
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
 
+// Function to get the current time in UTC
+        function getCurrentTimeUTC() {
+            const now = new Date();
+            return now.toUTCString();
+        }
+
+        // Function to get the current day of the week
+        function getCurrentDay() {
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const today = new Date();
+            return days[today.getUTCDay()];
+        }
+
+        // Display the current time in UTC
+        document.getElementById('utcTime').innerText = getCurrentTimeUTC();
+
+        // Display the current day
+        document.getElementById('currentDay').innerText = getCurrentDay();
+
+        // Update time every second
+        setInterval(() => {
+            document.getElementById('utcTime').innerText = getCurrentTimeUTC();
+        }, 1000);
+
+
 // ********** close links ************
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
