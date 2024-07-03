@@ -47,8 +47,8 @@
         <div class="banner">
             <div class="container">
                 <div class="headerTextContent">
-                    <p class="details">Today is <span>Wednesday</span> and its <span>12:00pm</span></p>
-                    <h1>I'm OluwaTobiloba <br>Abodunde</h1> <br>
+                    <p class="details">Today is <span data-testid="currentDay">Wednesday</span> and its <span data-testid="currentTimeUTC">12:00pm</span></p>
+                    <h1>I'm <span data-testid="slackDisplayName">OluwaTobiloba <br>Abodunde</span></h1> <br>
                     <p>
                        Fast Growing Frontend Web Developer.
                     </p>
@@ -57,7 +57,7 @@
                     </p>
                 </div>
                 <div>
-                    <div class="ohteeImg">
+                    <div class="ohteeImg" data-testid="slackProfilePicture">
                     </div>
                 </div>
                 
@@ -207,10 +207,10 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
-            <!-- <li>
-                <a href="https://www.twitter.com">
-                    <i class="fab fa-sketch"></i>
-                </a> -->
+            <li>
+                <a href="mailto:aboduntobi@gmail.com" data-testid="slackEmail">
+<i class="far fa-envelope-open"></i>            
+    </a>
             </li>
         </ul>
         <p>
