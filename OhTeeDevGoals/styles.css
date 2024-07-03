@@ -425,6 +425,21 @@ header {
         width: 300px;
         height: 300px;
     }
+
+        .projectImg img {
+            width: 250px;
+        }
+
+                .leftProject {
+                    padding: 1rem;
+                }
+}
+
+
+@media screen and (max-width: 768px) {
+    .projectImg img {
+            width: 150px;
+        }
 }
 
 /* sections and title */
@@ -440,14 +455,115 @@ header {
 
 #skill,
 #projects,
-#internship,
 #career {
     height: 100vh;
 }
 
-#projects, #career{
+#projects {
     background: var(--clr-white);
 }
+
+
+/* SKILLS SECTION */
+.center {
+    text-align: center;
+    padding: 0 3rem;
+}
+.skillHead {
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+ .progress-bars {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 2rem;
+     width: 100%;
+ }
+
+  .progress-bar {
+      display: flex;
+      flex-direction: column;
+  }
+
+
+        .prog-title {
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    
+        .progress-con {
+            display: flex;
+            align-items: center;
+        }
+
+                .prog-text {
+                    color:gray;
+                }
+        
+                .progress {
+                    width: 100%;
+                    height: .45rem;
+                    background-color: darkgray;
+                    margin-left: 1rem;
+                    position: relative;
+                }
+
+                                 .span {
+                                     position: absolute;
+                                     top: 0;
+                                     left: 0;
+                                     height: 100%;
+                                     background-color: green;
+                                     transition: all .4s ease-in-out;
+                                     width: 90%;
+                                 }
+                
+                                 .html {
+                                     width: 90%;
+                                 }
+                
+                                 .css3 {
+                                     width: 90%;
+                                 }
+                
+                                 .javascript {
+                                     width: 90%;
+                                 }
+                
+                                 .reactjs {
+                                     width: 90%;
+                                 }
+                
+                                 .python {
+                                     width: 90%;
+                                 }
+                
+                                 .Figma {
+                                     width: 100%;
+                                 }
+/* END OF SKILLS SECTION */
+
+
+/* PROJECT SECTION */
+.project {
+}
+
+.leftProject {
+    /* width: 50%; */
+    padding: 2rem;
+}
+
+.textcontent {
+    width: 400px;
+}
+
+.projectImg img {
+    width: 500px;
+}
+/* END OF PROJECT SECTION */
+
+
 
 
 footer {
